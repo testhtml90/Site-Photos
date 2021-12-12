@@ -1,0 +1,913 @@
+/*######################################## GLOBAL ########################################*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "xagregular";
+  src: url("../Typo/webfontkit-20210905-034717/xag_regular-webfont.woff2")
+      format("woff2"),
+    url("../Typo/webfontkit-20210905-034717/xag_regular-webfont.woff2")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "eightiesregular";
+  src: url("../Typo/") format("woff2"), url("../Typo/") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Aventa";
+  src: url("../Typo/Aventa\ variable/Aventa-Italic.eot");
+  src: local("Aventa Italic"), local("Aventa-Italic"),
+    url("../Typo/Aventa\ variable/Aventa-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Typo/Aventa\ variable/Aventa-Italic.woff2") format("woff2"),
+    url("../Typo/Aventa\ variable/Aventa-Italic.woff") format("woff"),
+    url("../Typo/Aventa\ variable/Aventa-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aventa Extra";
+  src: url("../Typo/Aventa\ variable/Aventa-ExtraLight.eot");
+  src: local("Aventa Extra Light"), local("Aventa-ExtraLight"),
+    url("../Typo/Aventa\ variable/Aventa-ExtraLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Typo/Aventa\ variable/Aventa-ExtraLight.woff2") format("woff2"),
+    url("../Typo/Aventa\ variable/Aventa-ExtraLight.woff") format("woff"),
+    url("../Typo/Aventa\ variable/Aventa-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aventa";
+  src: url("../Typo/Aventa\ variable/Aventa-Black.eot");
+  src: local("Aventa Black"), local("Aventa-Black"),
+    url("../Typo/Aventa\ variable/Aventa-Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Typo/Aventa\ variable/Aventa-Black.woff2") format("woff2"),
+    url("../Typo/Aventa\ variable/Aventa-Black.woff") format("woff"),
+    url("../Typo/Aventa\ variable/Aventa-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aventa Italic Variable";
+  src: url("../Typo/Aventa\ variable/AventaItalicVariable.eot");
+  src: local("Aventa Italic Variable"), local("AventaItalicVariable"),
+    url("../Typo/Aventa\ variable/AventaItalicVariable.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Typo/Aventa\ variable/AventaItalicVariable.woff2") format("woff2"),
+    url("../Typo/Aventa\ variable/AventaItalicVariable.woff") format("woff"),
+    url("../Typo/Aventa\ variable/AventaItalicVariable.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aventa";
+  src: url("../Typo/Aventa\ variable/Aventa-BoldItalic.eot");
+  src: local("Aventa Bold Italic"), local("Aventa-BoldItalic"),
+    url("Aventa-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("Aventa-BoldItalic.woff2") format("woff2"),
+    url("Aventa-BoldItalic.woff") format("woff"),
+    url("Aventa-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aventa Extra";
+  src: url("../Typo/Aventa\ variable/Aventa-ExtraBoldItalic.eot");
+  src: local("Aventa Extra Bold Italic"), local("Aventa-ExtraBoldItalic"),
+    url("../Typo/Aventa\ variable/Aventa-ExtraBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Typo/Aventa\ variable/Aventa-ExtraBoldItalic.woff2") format("woff2"),
+    url("../Typo/Aventa\ variable/Aventa-ExtraBoldItalic.woff") format("woff"),
+    url("../Typo/Aventa\ variable/Aventa-ExtraBoldItalic.ttf")
+      format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aventa Extra";
+  src: url("../Typo/Aventa\ variable/Aventa-ExtraLightItalic.eot");
+  src: local("Aventa Extra Light Italic"), local("Aventa-ExtraLightItalic"),
+    url("../Typo/Aventa\ variable/Aventa-ExtraLightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Typo/Aventa\ variable/Aventa-ExtraLightItalic.woff2")
+      format("woff2"),
+    url("../Typo/Aventa\ variable/Aventa-ExtraLightItalic.woff") format("woff"),
+    url("../Typo/Aventa\ variable/Aventa-ExtraLightItalic.ttf")
+      format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aventa Extra";
+  src: url("../Typo/Aventa\ variable/Aventa-ExtraBold.eot");
+  src: local("Aventa Extra Bold"), local("Aventa-ExtraBold"),
+    url("../Typo/Aventa\ variable/Aventa-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Typo/Aventa\ variable/Aventa-ExtraBold.woff2") format("woff2"),
+    url("../Typo/Aventa\ variable/Aventa-ExtraBold.woff") format("woff"),
+    url("../Typo/Aventa\ variable/Aventa-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aventa";
+  src: url("../Typo/Aventa\ variable/Aventa-Bold.eot");
+  src: local("Aventa Bold"), local("Aventa-Bold"),
+    url("../Typo/Aventa\ variable/Aventa-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Typo/Aventa\ variable/Aventa-Bold.woff2") format("woff2"),
+    url("../Typo/Aventa\ variable/Aventa-Bold.woff") format("woff"),
+    url("../Typo/Aventa\ variable/Aventa-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aventa";
+  src: url("../Typo/Aventa\ variable/Aventa-BlackItalic.eot");
+  src: local("Aventa Black Italic"), local("Aventa-BlackItalic"),
+    url("../Typo/Aventa\ variable/Aventa-BlackItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Typo/Aventa\ variable/Aventa-BlackItalic.woff2") format("woff2"),
+    url("../Typo/Aventa\ variable/Aventa-BlackItalic.woff") format("woff"),
+    url("../Typo/Aventa\ variable/Aventa-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aventa";
+  src: url("../Typo/Aventa\ variable/Aventa-ThinItalic.eot");
+  src: local("Aventa Thin Italic"), local("Aventa-ThinItalic"),
+    url("../Typo/Aventa\ variable/Aventa-ThinItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Typo/Aventa\ variable/Aventa-ThinItalic.woff2") format("woff2"),
+    url("../Typo/Aventa\ variable/Aventa-ThinItalic.woff") format("woff"),
+    url("../Typo/Aventa\ variable/Aventa-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aventa";
+  src: url("../Typo/Aventa\ variable/Aventa-Thin.eot");
+  src: local("Aventa Thin"), local("Aventa-Thin"),
+    url("../Typo/Aventa\ variable/Aventa-Thin.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Typo/Aventa\ variable/Aventa-Thin.woff2") format("woff2"),
+    url("../Typo/Aventa\ variable/Aventa-Thin.woff") format("woff"),
+    url("../Typo/Aventa\ variable/Aventa-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aventa";
+  src: url("../Typo/Aventa\ variable/Aventa-Medium.eot");
+  src: local("Aventa Medium"), local("Aventa-Medium"),
+    url("../Typo/Aventa\ variable/Aventa-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Typo/Aventa\ variable/Aventa-Medium.woff2") format("woff2"),
+    url("../Typo/Aventa\ variable/Aventa-Medium.woff") format("woff"),
+    url("../Typo/Aventa\ variable/Aventa-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aventa";
+  src: url("../Typo/Aventa\ variable/Aventa-LightItalic.eot");
+  src: local("Aventa Light Italic"), local("Aventa-LightItalic"),
+    url("../Typo/Aventa\ variable/Aventa-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Typo/Aventa\ variable/Aventa-LightItalic.woff2") format("woff2"),
+    url("../Typo/Aventa\ variable/Aventa-LightItalic.woff") format("woff"),
+    url("../Typo/Aventa\ variable/Aventa-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aventa Semi";
+  src: url("../Typo/Aventa\ variable/Aventa-SemiBold.eot");
+  src: local("Aventa Semi Bold"), local("Aventa-SemiBold"),
+    url("../Typo/Aventa\ variable/Aventa-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Typo/Aventa\ variable/Aventa-SemiBold.woff2") format("woff2"),
+    url("../Typo/Aventa\ variable/Aventa-SemiBold.woff") format("woff"),
+    url("../Typo/Aventa\ variable/Aventa-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aventa";
+  src: url("../Typo/Aventa\ variable/Aventa-Regular.eot");
+  src: local("Aventa"), local("Aventa-Regular"),
+    url("../Typo/Aventa\ variable/Aventa-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Typo/Aventa\ variable/Aventa-Regular.woff2") format("woff2"),
+    url("../Typo/Aventa\ variable/Aventa-Regular.woff") format("woff"),
+    url("../Typo/Aventa\ variable/Aventa-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aventa Variable";
+  src: url("../Typo/Aventa\ variable/AventaVariable.eot");
+  src: local("Aventa Variable"), local("AventaVariable"),
+    url("../Typo/Aventa\ variable/AventaVariable.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Typo/Aventa\ variable/AventaVariable.woff2") format("woff2"),
+    url("../Typo/Aventa\ variable/AventaVariable.woff") format("woff"),
+    url("../Typo/Aventa\ variable/AventaVariable.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aventa";
+  src: url("../Typo/Aventa\ variable/Aventa-Light.eot");
+  src: local("Aventa Light"), local("Aventa-Light"),
+    url("../Typo/Aventa\ variable/Aventa-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Typo/Aventa\ variable/Aventa-Light.woff2") format("woff2"),
+    url("../Typo/Aventa\ variable/Aventa-Light.woff") format("woff"),
+    url("../Typo/Aventa\ variable/Aventa-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aventa";
+  src: url("../Typo/Aventa\ variable/Aventa-MediumItalic.eot");
+  src: local("Aventa Medium Italic"), local("Aventa-MediumItalic"),
+    url("../Typo/Aventa\ variable/Aventa-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Typo/Aventa\ variable/Aventa-MediumItalic.woff2") format("woff2"),
+    url("../Typo/Aventa\ variable/Aventa-MediumItalic.woff") format("woff"),
+    url("../Typo/Aventa\ variable/Aventa-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aventa Semi";
+  src: url("../Typo/Aventa\ variable/Aventa-SemiBoldItalic.eot");
+  src: local("Aventa Semi Bold Italic"), local("Aventa-SemiBoldItalic"),
+    url("../Typo/Aventa\ variable/Aventa-SemiBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Typo/Aventa\ variable/Aventa-SemiBoldItalic.woff2") format("woff2"),
+    url("../Typo/Aventa\ variable/Aventa-SemiBoldItalic.woff") format("woff"),
+    url("../Typo/Aventa\ variable/Aventa-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+/*! Generated by Font Squirrel (https://www.fontsquirrel.com) on September 5, 2021 */
+
+@font-face {
+  font-family: "typefesseclaire-obscure";
+  src: url("../Typo/typefesse/typefesse_claire-obscure-webfont.woff2")
+      format("woff2"),
+    url("../Typo/typefesse/typefesse_claire-obscure-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "typefessepleine";
+  src: url("../Typo/typefesse/typefesse_pleine-webfont.woff2") format("woff2"),
+    url("../Typo/typefesse/typefesse_pleine-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.h2-menu__non-responsive,
+.non-responsive-content,
+.non-responsive-footer,
+.h1-non-resp {
+  position: absolute;
+  top: -100000000000000000000px;
+}
+
+/*-------------------------ECRAN TEL (-900px de large)---------------------------------*/
+h1 {
+  font-family: "typefesseclaire-obscure";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 0em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 45px;
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+h2 {
+  font-family: Inconsolata;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 19px;
+  letter-spacing: 0.2em;
+  text-align: center;
+
+  margin-top: 20px;
+  position: relative;
+}
+
+h3 {
+  font-family: Inconsolata;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 0em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.link {
+  cursor: pointer;
+}
+/*######################################## CONTENT ########################################*/
+
+.responsive-content {
+  /* background-color: black; */
+  width: 100%;
+  margin-top: 40px;
+}
+
+img {
+  width: 90%;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/*######################################## FOOTER ########################################*/
+
+.footer {
+  width: 100%;
+  height: 20px;
+}
+
+footer {
+  padding-top: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+  color: #707070;
+}
+
+.responsive-footer__link {
+  color: #707070;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+.responsive-footer__link-bottom {
+  padding-bottom: 10px;
+}
+
+.responisve-footer__link-grid-ligne {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*######################################## NAV ACTIVATE ########################################*/
+
+.nav {
+  transition: all 0.4s ease-out;
+}
+/*A envoyer à .responsive-content*/
+.nav-activate {
+  opacity: 0.2;
+  z-index: -100000;
+}
+
+.nav-link {
+  font-family: Inconsolata;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 0em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 34px;
+
+  position: absolute;
+  top: -1000000000000px;
+}
+
+.nav-link__activate1 {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+
+  z-index: 10000;
+}
+.nav-link__activate2 {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+
+  z-index: 10000;
+}
+.nav-link__activate3 {
+  position: absolute;
+  top: 250px;
+  left: 50px;
+
+  z-index: 10000;
+}
+.nav-link__activate4 {
+  position: absolute;
+  top: 300px;
+  left: 50px;
+
+  z-index: 10000;
+}
+
+.nav-activate__h1-2 {
+  opacity: 1;
+  z-index: 10000;
+}
+
+.carré {
+  position: absolute;
+  top: -1000000px;
+}
+.carré__activate {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  top: 0;
+}
+
+/*-------------------------ECRAN PC (+900px de large)---------------------------------*/
+@media screen and (min-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+  h1 {
+    font-size: 75px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  .responsive,
+  .h2-menu,
+  .h1-resp {
+    position: absolute;
+    top: -100000000000000000000px;
+  }
+  .h2-menu__non-responsive {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 9%;
+    margin-left: 9%;
+  }
+  .h2-menu__non-responsive,
+  .non-responsive-content,
+  .non-responsive-footer,
+  .h1-non-resp {
+    position: inherit;
+  }
+  .non-responsive-content {
+    margin-top: 40px;
+    padding-right: 9%;
+    padding-left: 9%;
+  }
+
+  .img1 {
+    width: 50%;
+    height: auto;
+  }
+  .img2 {
+    width: 50%;
+    height: auto;
+  }
+  .img3 {
+    width: 45%;
+    height: auto;
+  }
+  .img4 {
+    min-width: 55%;
+    height: auto;
+  }
+  .img5 {
+    min-width: 49%;
+    height: auto;
+  }
+  .img6 {
+    min-width: 49%;
+    height: auto;
+  }
+  .img7 {
+    min-width: 32%;
+    height: auto;
+  }
+  .img8 {
+    min-width: 32%;
+    height: auto;
+  }
+  .img9 {
+    min-width: 32%;
+    height: auto;
+  }
+  .img10 {
+    min-width: 59%;
+    height: auto;
+  }
+  .img11 {
+    min-width: 39%;
+    height: auto;
+  }
+  .img12 {
+    min-width: 100%;
+    height: auto;
+  }
+
+  .flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .img-non-resp {
+    margin-right: 2%;
+  }
+
+  img {
+    width: 90%;
+    margin: 0;
+    margin-bottom: 2%;
+    border: none;
+  }
+  /*----------------------- page SKATEBORDING --------------*/
+
+  /*Ligne1*/
+  .img1-SKATE {
+    min-width: 60%;
+    height: auto;
+  }
+  .img2-SKATE {
+    min-width: 40%;
+    height: auto;
+  }
+
+  /*Ligne2*/
+  .img3-SKATE {
+    min-width: 24%;
+    height: auto;
+  }
+  .img4-SKATE {
+    min-width: 24%;
+    height: auto;
+  }
+  .img5-SKATE {
+    min-width: 24%;
+    height: auto;
+  }
+  .img6-SKATE {
+    min-width: 24%;
+    height: auto;
+  }
+
+  /*Ligne3*/
+  .img7-SKATE {
+    min-width: 33%;
+    height: auto;
+  }
+  .img8-SKATE {
+    min-width: 67%;
+    height: auto;
+  }
+
+  /*Ligne4*/
+  .img9-SKATE {
+    min-width: 32.65%;
+    height: auto;
+  }
+  .img10-SKATE {
+    min-width: 32.65%;
+    height: auto;
+  }
+  .img11-SKATE {
+    min-width: 32.65%;
+    height: auto;
+  }
+
+  /*Ligne5*/
+  .img12-SKATE {
+    min-width: 32.65%;
+    height: auto;
+  }
+  .ligne6 {
+    min-width: 32.65%;
+    height: auto;
+  }
+  .img13-SKATE {
+    min-width: 100%;
+    height: auto;
+  }
+  .img14-SKATE {
+    min-width: 100%;
+    height: auto;
+  }
+  .img15-SKATE {
+    min-width: 32.65%;
+    height: auto;
+  }
+
+  /*Ligne6*/
+  .img16-SKATE {
+    min-width: 75%;
+    height: auto;
+  }
+  .img17-SKATE {
+    min-width: 25%;
+    height: auto;
+  }
+
+  /*Ligne7*/
+  .img18-SKATE {
+    min-width: 50%;
+    height: auto;
+  }
+  .img19-SKATE {
+    min-width: 50%;
+    height: auto;
+  }
+
+  /*Ligne8*/
+  .img20-SKATE {
+    min-width: 50%;
+    height: auto;
+  }
+  .img21-SKATE {
+    min-width: 50%;
+    height: auto;
+  }
+
+  /*Ligne9*/
+  .img22-SKATE {
+    min-width: 40%;
+    height: auto;
+  }
+  .ligne9 {
+    min-width: 60%;
+    height: auto;
+  }
+  .img23-SKATE {
+    min-width: 100%;
+    height: auto;
+  }
+  .img24-SKATE {
+    min-width: 100%;
+    height: auto;
+  }
+  /*----------------------- page MACROPHOTOGRAPHY --------------*/
+
+  /*Ligne1*/
+  .img1-MACRO {
+    min-width: 60%;
+    height: auto;
+  }
+  .img2-MACRO {
+    min-width: 40%;
+    height: auto;
+  }
+
+  /*Ligne2*/
+  .img3-MACRO {
+    min-width: 35%;
+    height: auto;
+  }
+  .img4-MACRO {
+    min-width: 65%;
+    height: auto;
+  }
+
+  /*Ligne3*/
+  .img5-MACRO {
+    min-width: 65%;
+    height: auto;
+  }
+  .img6-MACRO {
+    min-width: 35%;
+    height: auto;
+  }
+
+  /*Ligne4*/
+  .img7-MACRO {
+    min-width: 40%;
+    height: auto;
+  }
+  .img8-MACRO {
+    min-width: 60%;
+    height: auto;
+  }
+
+  /*Ligne5*/
+  .img9-MACRO {
+    min-width: 65%;
+    height: auto;
+  }
+  .img10-MACRO {
+    min-width: 35%;
+    height: auto;
+  }
+
+  /*Ligne6*/
+  .img11-MACRO {
+    min-width: 102%;
+    height: auto;
+  }
+
+  /*Ligne7*/
+  .img12-MACRO {
+    min-width: 30%;
+    height: auto;
+  }
+  .img13-MACRO {
+    min-width: 28%;
+    height: auto;
+  }
+  .img14-MACRO {
+    min-width: 40%;
+    height: auto;
+  }
+  .img15-MACRO {
+    min-width: 32.65%;
+    height: auto;
+  }
+  .img16-MACRO {
+    min-width: 32.65%;
+    height: auto;
+  }
+  .img17-MACRO {
+    min-width: 32.65%;
+    height: auto;
+  }
+
+  /*----------------------- page STREET -------------------*/
+
+  /*Ligne1*/
+  .img1-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+  .img2-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+  .img3-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+
+  /*Ligne2*/
+  .img4-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+  .img5-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+  .img6-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+
+  /*Ligne3*/
+  .img7-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+  .img8-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+  .img9-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+
+  /*Ligne4*/
+  .img10-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+  .img11-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+  .img11-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+
+  /*Ligne5*/
+  .img12-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+  .img13-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+  .img14-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+
+  /*Ligne6*/
+  .img15-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+  .img16-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+  .img17-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+
+  /*Ligne7*/
+  .img18-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+  .img19-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+  .img20-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+
+  /*Ligne8*/
+  .img21-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+  .img22-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+  .img23-STREET {
+    min-width: 33%;
+    height: auto;
+  }
+  /*############################ FOOTER ######################*/
+
+  .non-responsive-footer {
+    padding-top: 20px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .non-responisve-footer__link-grid-ligne {
+    display: flex;
+    justify-content: space-around;
+  }
+  .block {
+    display: block;
+  }
+  .non-responsive-footer__link-MACRO,
+  .non-responsive-footer__link-OTHER {
+    margin: 0;
+  }
+}
