@@ -316,7 +316,8 @@ body {
 
 /*-------------------------ECRAN TEL (-900px de large)---------------------------------*/
 h1 {
-  font-family: "typefesseclaire-obscure";
+  /*font-family: "typefesseclaire-obscure";*/
+  font-family: Arial;
   font-weight: 400;
   font-style: normal;
   line-height: 0em;
